@@ -96,7 +96,7 @@ ok
 until xcode-select --print-path &> /dev/null; do
     sleep 5
 done
-fi
+
 bot "OK, let's roll..."
 
 #####
@@ -232,13 +232,13 @@ fi
 
 
 if [[ $appresponse =~ ^(y|yes|Y) ]];then
-./apps.sh
+bash ./apps.sh
 else
     ok "skipped Installing [macos] applications, apps preferences and better app defaults.";
 fi
 
 if [[ $fontresponse =~ ^(y|yes|Y) ]];then
-./fonts/install.sh
+bash ./fonts/install.sh
 ok
 else
     ok "skipped Installing fixed width and powerline-fonts.";
@@ -273,7 +273,7 @@ else
 fi
 
 if [[ $cli_response =~ ^(y|yes|Y) ]];then
-    ./cli.sh
+    bash ./cli.sh
 else
     ok "skipped command-line tools.";
 fi
