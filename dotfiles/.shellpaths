@@ -1,0 +1,54 @@
+#My Scripts
+export PATH=$PATH:.
+
+#Brew
+export PATH=/usr/local/sbin:$PATH
+export PATH=/usr/local/bin:$PATH
+export PATH="$(brew --prefix coreutils)/libexec/gnubin:$PATH"
+
+
+# GO
+#export PATH=$PATH:/usr/local/opt/go/libexec/bin
+
+# The next line updates PATH for the Google Cloud SDK.
+#source "/Users/$(whoami)/Downloads/google-cloud-sdk/path.zsh.inc"
+
+# The next line enables shell command completion for gcloud.
+#source "/Users/$(whoami)/Downloads/google-cloud-sdk/completion.zsh.inc"
+
+
+ # Python
+export PATH="/usr/local/share/python:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+# Python from pyenv
+export PYENV_ROOT="${HOME}/.pyenv"
+if [ -d "${PYENV_ROOT}" ]; then
+    export PATH=${PYENV_ROOT}/bin:$PATH
+    eval "$(pyenv init -)"
+fi
+
+if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
+if which pyenv-virtualenv-init > /dev/null; then eval "$(pyenv virtualenv-init -)"; fi
+pyenv virtualenvwrapper
+# pip should only run if there is a virtualenv currently activated
+# export PIP_REQUIRE_VIRTUALENV=true
+
+# Virtual Environment
+export WORKON_HOME=$HOME/.virtualenvs
+export PROJECT_HOME=$HOME/Development/Projects
+
+
+# Ruby
+# Chruby
+
+if [[ -f /usr/local/opt/chruby/share/chruby/chruby.sh ]]; then
+  source /usr/local/opt/chruby/share/chruby/chruby.sh
+  source /usr/local/opt/chruby/share/chruby/auto.sh
+else
+  echo "Ain't got no chruby"
+fi
+
+if [ -n "$BASH_VERSION" ] || [ -n "$ZSH_VERSION" ]; then
+  source /usr/local/share/chruby/chruby.sh
+  source /usr/local/share/chruby/auto.sh
+fi
+

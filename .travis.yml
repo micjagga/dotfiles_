@@ -1,0 +1,9 @@
+language: sh
+
+script:
+- ./test.sh
+
+notifications:
+  email: false
+  #slack:
+    #secure: eVLnWpkX6NgnWQBzTVaW2sSpgd10vnBo1EXVJWxvGijaxse02FZU5C/KCZhchcpkjI8sZpAIcKCCQIv3irz2vTA6K8Q9iHWjm4axdEUZhuQ0g89i6tQmuuzOUQXybqEa0paPrWOpa0ehpx8NWHuF7W1WHFwlFIigtWKGIZ2FG18=

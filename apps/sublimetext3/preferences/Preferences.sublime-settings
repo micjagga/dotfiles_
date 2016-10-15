@@ -1,0 +1,77 @@
+{
+	"color_scheme": "Packages/Boxy Theme/schemes/Boxy Yesterday.tmTheme",
+	"font_face": "Fira Code",
+	"font_size": 14,
+	"default_encoding": "UTF-8",
+	"default_line_ending": "unix",
+	"detect_indentation": false,
+	"file_exclude_patterns":
+	[
+		".DS_Store",
+		"Desktop.ini",
+		"._*",
+		"Thumbs.db",
+		".Spotlight-V100",
+		".Trashes"
+	],
+	"folder_exclude_patterns":
+	[
+		".git",
+		"node_modules"
+	],
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"added_words":
+	[
+		"readme",
+		"dotfiles",
+		"App",
+		"Xcode",
+		"xcode",
+		"zsh",
+		"repo",
+		"Dropbox",
+		"usr",
+		"apps",
+		"mackup",
+		"blog",
+		"https",
+		"app",
+		"osx",
+		"Brewfile",
+		"zshrc",
+		"symlink",
+		"versioned",
+		"repo's"
+	],
+	"theme": "Boxy Yesterday.sublime-theme",
+	"theme_bar_margin_top_sm": true,
+	"theme_button_rounded": true,
+	"theme_find_panel_close_hidden": true,
+	"theme_find_panel_size_xs": true,
+	"theme_font_md": true,
+	"theme_grid_border_size_lg": true,
+	"theme_icon_button_highlighted": true,
+	"theme_sidebar_font_lg": true,
+	"theme_tab_arrows_hidden": true,
+	"theme_tab_rounded": true,
+	"theme_tab_selected_prelined": true,
+	"theme_tab_separator": true,
+	"theme_tab_size_md": true,
+	"line_numbers": false,
+	"line_padding_bottom": 5,
+	"line_padding_top": 5,
+	"save_on_focus_lost": true,
+	"show_line_endings": true,
+	"theme": "Material-Theme.sublime-theme",
+	"translate_tabs_to_spaces": true,
+	"trim_trailing_white_space_on_save": true,
+	"word_wrap": true,
+	"always_show_minimap_viewport": false,
+	"bold_folder_labels": true,
+	"caret_style": "phase",
+	"draw_indent_guides": true,
+	"ensure_newline_at_eof_on_save": true
+}

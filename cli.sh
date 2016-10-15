@@ -44,6 +44,7 @@ if [[ $unixresponse =~ ^(y|yes|Y) ]];then
     require_brew zsh-completions
 
     require_brew git
+    require_brew hub
     require_brew git-extras
     require_brew svn
 
@@ -57,6 +58,17 @@ if [[ $unixresponse =~ ^(y|yes|Y) ]];then
     require_brew unzip
     require_brew rsync
     require_brew cloc
+    require_brew mackup
+    require_brew trash
+    require_brew fasd
+
+    require_brew pyenv
+    require_brew pyenv-virtualenv
+    require_brew pyenv-virtualenvwrapper
+    require_brew ruby-install
+    require_brew chruby
+    require_brew tmux
+
 
     ok "packages installed..."
 else
@@ -66,12 +78,15 @@ fi
 if [[ $runtimesresponse =~ ^(y|yes|Y) ]];then
     action "install brew packages..."
 
+    require_brew nvm
     require_brew node
     require_brew ruby
     require_brew python
     require_brew python3
 
     require_brew mysql
+    require_brew sqlite3
+    require_brew mongodb
 
     ok "packages installed..."
 else
@@ -112,6 +127,16 @@ if [[ $packagesresponse =~ ^(y|yes|Y) ]];then
         ok
     }
 
+    function require_apm() {
+        running "checking atom plugin: $1"
+        apm list --installed --bare | grep $1@ > /dev/null
+        if [[ $? != 0 ]]; then
+            action "apm install $1"
+            apm install $1
+        fi
+        ok
+    }
+
     require_npm bower
     require_npm browser-sync
     require_npm browserify
@@ -129,6 +154,12 @@ if [[ $packagesresponse =~ ^(y|yes|Y) ]];then
     require_npm hyperlink
     require_npm csscomb
     require_npm disc
+    require_npm svgo
+    require_npm yo
+    require_npm flow-bin
+    require_npm flow-typed
+    require_npm servedir
+    require_npm npm-check-updates
 
     require_gem bundler
     require_gem rake
@@ -136,6 +167,10 @@ if [[ $packagesresponse =~ ^(y|yes|Y) ]];then
     require_gem scss-lint
 
     require_pip virtualenv
+    require_pip pygments
+    require_pip flake8
+    require_pip flake8-docstrings
+    require_apm linter-flake8
 
     ok "packages installed..."
 else
