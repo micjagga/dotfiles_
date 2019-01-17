@@ -8,7 +8,7 @@
 ░░██████░░██████   ░░██   ░██  ░██ ███░░██████ ██████
 
   ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
- ░▓ Software Installation, Configuration and Preferences for macOS  		▓
+ ░▓ Software Installation, Configuration and Preferences for macOS  	    ▓
  ░▓ https://github.com/micjagga/dotfiles                                    ▓
  ░▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
 ```
