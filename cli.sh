@@ -46,7 +46,6 @@ if [[ $unixresponse =~ ^(y|yes|Y) ]];then
     require_brew git
     require_brew hub
     require_brew git-extras
-    require_brew svn
 
     require_brew wget --enable-iri
     require_brew curl
